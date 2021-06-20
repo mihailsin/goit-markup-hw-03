@@ -1,0 +1,225 @@
+/* 
+Цвет текста (заголовки) - #212121;
+Цвет текста (основной) - #757575;
+Цвет текста (ссылки навигации) - #212121;
+Цвет текста (акцент) - #2196F3; 
+Цвет фона - #FFFFFF
+Цвет фона (вторичный) - #2F303A
+Цвет текста (адреса в футере) - 255, 255, 255, 0,6; 
+Цвет фона секции - #F5F4FA
+Цвет лого - #000000 
+*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --ltitle-text-color: rgba(0, 0, 0, 0.2);
+  --hero-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bckg-color: #ffffff;
+  --secondary-bckg-color: #f5f4fa;
+  --footer-bckg-color: #2f303a;
+  --blacktext-color: #000000;
+  --whitetext-color: #ffffff;
+  --footlogo-span-color: rgba(255, 255, 255, 1);
+  --foot-contacts-color: rgba(255, 255, 255, 0.6);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--primary-bckg-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+/* Убираеn метки из списков */
+.unmarked {
+  list-style: none;
+  margin: 0;
+}
+/* Убирает подчеркивания и курсив из ссылок */
+.link {
+  text-decoration: none;
+}
+/* Подсвечивает текущую страницу */
+.current {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+/* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
+.logical-title {
+  color: var(--ltitle-text-color);
+}
+/* =========HEADER========= */
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+.container {
+  outline: 2px solid red;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* head-logo */
+.header-logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.headlogo-span {
+  color: var(--blacktext-color);
+}
+/* Site-Nav */
+.nav-list .link {
+  color: var(--title-text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+/* Contacts */
+.header-contacts-list .link {
+  color: var(--primary-text-color);
+}
+.header-contacts-list .link:hover,
+.header-contacts-list .link:focus {
+  color: var(--accent-color);
+}
+/* ===============MAIN============== */
+
+/* Hero */
+.hero {
+  background-color: var(--footer-bckg-color);
+}
+.hero-title {
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.button {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* Advantages */
+.advantages-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-dscr {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Features */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Team */
+.team {
+  background-color: var(--secondary-bckg-color);
+}
+.team-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-member {
+  color: var(--title-text-color);
+}
+/*==========FOOTER========*/
+.page-footer {
+  background-color: var(--footer-bckg-color);
+  font-style: inherit;
+}
+.footer-logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footlogo-span {
+  color: var(--footlogo-span-color);
+}
+.contacts {
+  font-style: inherit;
+}
+.footer-contacts-list .link {
+  color: var(--foot-contacts-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts-list .link:hover,
+.footer-contacts-list .link:focus {
+  color: var(--accent-color);
+}
+/* Ссылка на карту визуально отличается от остального списка ссылок,
+ поэтому font-style: normal; и text-decoration: none; -принудительно */
+.map-link {
+  color: var(--whitetext-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Exhibition */
+.exhibition-list-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.exhibition-list-dscr {
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* ==============Filter List================ */
+.filter-button {
+  font-family: 'roboto';
+  background-color: var(--secondary-bckg-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--whitetext-color);
+}
