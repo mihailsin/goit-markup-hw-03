@@ -57,7 +57,21 @@ body {
 }
 /* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
 .logical-title {
+  margin: 0;
   color: var(--ltitle-text-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Данный контейнер будет использоваться везде,
+ где нужно ограничить контент по ширине, согласно макету */
+.container {
+  outline: 3px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* =========HEADER========= */
 .page-header {
@@ -68,13 +82,6 @@ body {
   margin-bottom: 0;
 
   color: var(--title-text-color);
-}
-/* Данный контейнер будет использоваться везде,
- где нужно ограничить контент по ширине, согласно макету */
-.container {
-  outline: 3px solid red;
-  width: 1200px;
-  margin: 0 auto;
 }
 /* Дополнительный ксасс, задан чтобы
  выстроить все содержимое шапки в ряд */
@@ -141,7 +148,6 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 }
 .hero-title {
   color: var(--hero-text-color);
@@ -169,6 +175,12 @@ body {
   text-align: center;
 }
 /* Advantages */
+.advantages-list {
+  display: flex;
+}
+.advantages-list .item + .item {
+  margin-left: 30px;
+}
 .advantages-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -182,20 +194,31 @@ body {
 }
 /* Features */
 .section-title {
+  margin: 0;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.features-list {
+  display: flex;
+}
+.features-list .item + .item {
+  margin-left: 30px;
+}
 /* Team */
 .team {
   background-color: var(--secondary-bckg-color);
 }
 .team-list {
+  display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+.team-list .item + .item {
+  margin-left: 30px;
 }
 .team-member {
   color: var(--title-text-color);
