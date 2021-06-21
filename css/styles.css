@@ -38,13 +38,16 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+/* ================Классы - Утилиты================ */
 /* Убираеn метки из списков */
 .unmarked {
-  list-style: none;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 /* Убирает подчеркивания и курсив из ссылок */
 .link {
+  color: var(--title-text-color);
   text-decoration: none;
 }
 /* Подсвечивает текущую страницу */
@@ -63,14 +66,26 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-bottom: 0;
+
+  color: var(--title-text-color);
 }
+/* Данный контейнер будет использоваться везде,
+ где нужно ограничить контент по ширине, согласно макету */
 .container {
   outline: 3px solid red;
   width: 1200px;
   margin: 0 auto;
 }
+/* Дополнительный ксасс, задан чтобы
+ выстроить все содержимое шапки в ряд */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /* head-logo */
 .header-logo {
+  display: block;
+  margin-right: 93px;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -82,15 +97,34 @@ body {
   color: var(--blacktext-color);
 }
 /* Site-Nav */
-.nav-list .link {
-  color: var(--title-text-color);
+.nav-list {
+  display: flex;
 }
+.nav-list > .item + .item {
+  margin-left: 50px;
+}
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-list .link:hover,
 .nav-list .link:focus {
   color: var(--accent-color);
 }
 /* Contacts */
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts-list > .item + .item {
+  margin-left: 50px;
+}
 .header-contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 .header-contacts-list .link:hover,
@@ -101,29 +135,38 @@ body {
 
 /* Hero */
 .hero {
+  width: 1600px;
+  height: 600px;
   background-color: var(--footer-bckg-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
 }
 .hero-title {
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 30px;
   margin: 0;
 }
 .button {
+  width: 200px;
+  height: 50px;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: inline-block;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  text-align: center;
 }
 /* Advantages */
 .advantages-title {
