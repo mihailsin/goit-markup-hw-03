@@ -38,11 +38,26 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+/* Сброс геометрии элементов по - умолчанию. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+}
 /* ================Классы - Утилиты================ */
 /* Убираеn метки из списков */
 .unmarked {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 /* Убирает подчеркивания и курсив из ссылок */
@@ -57,8 +72,8 @@ body {
 }
 /* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
 .logical-title {
-  margin: 0;
   color: var(--ltitle-text-color);
+  display: none;
 }
 .section {
   padding-top: 94px;
@@ -67,7 +82,6 @@ body {
 /* Данный контейнер будет использоваться везде,
  где нужно ограничить контент по ширине, согласно макету */
 .container {
-  outline: 3px solid red;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -79,7 +93,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-bottom: 0;
 
   color: var(--title-text-color);
 }
@@ -107,7 +120,7 @@ body {
 .nav-list {
   display: flex;
 }
-.nav-list > .item + .item {
+.nav-list > .item:not(:first-child) {
   margin-left: 50px;
 }
 .nav-list .link {
@@ -175,6 +188,9 @@ body {
   text-align: center;
 }
 /* Advantages */
+.section-title {
+  padding-bottom: 50px;
+}
 .advantages-list {
   display: flex;
 }
@@ -225,6 +241,9 @@ body {
 }
 /*==========FOOTER========*/
 .page-footer {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--footer-bckg-color);
   font-style: inherit;
 }
