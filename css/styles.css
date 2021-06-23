@@ -70,10 +70,13 @@ ol {
   color: var(--accent-color);
   text-decoration: none;
 }
-/* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
-.logical-title {
-  color: var(--ltitle-text-color);
-  display: none;
+/* Скрывает контент */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .section {
   padding-top: 94px;
@@ -229,37 +232,55 @@ ol {
 }
 .team-list {
   display: flex;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+.member-pic {
+  margin-bottom: 30px;
 }
 .team-list .item + .item {
   margin-left: 30px;
 }
 .team-member {
   color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.team-dscr {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--primary-text-color);
+  border-radius: 5px;
 }
 /*==========FOOTER========*/
 .page-footer {
   width: 1600px;
+  height: 252px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bckg-color);
   font-style: inherit;
 }
 .footer-logo {
+  display: inline-block;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .footlogo-span {
   color: var(--footlogo-span-color);
 }
 .contacts {
   font-style: inherit;
+}
+.footer-contacts-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contacts-list .link {
   color: var(--foot-contacts-color);
