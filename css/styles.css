@@ -92,11 +92,12 @@ ol {
 }
 /* =========HEADER========= */
 .page-header {
+  border-bottom: 2px solid;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--title-text-color);
 }
 /* Дополнительный ксасс, задан чтобы
@@ -107,8 +108,10 @@ ol {
 }
 /* head-logo */
 .header-logo {
-  display: block;
-  margin-right: 93px;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -122,6 +125,9 @@ ol {
 /* Site-Nav */
 .nav-list {
   display: flex;
+}
+.nav-list > .item:first-child {
+  margin-left: 93px;
 }
 .nav-list > .item:not(:first-child) {
   margin-left: 50px;
@@ -148,6 +154,7 @@ ol {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--primary-text-color);
 }
 .header-contacts-list .link:hover,
@@ -158,41 +165,42 @@ ol {
 
 /* Hero */
 .hero {
-  width: 1600px;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--footer-bckg-color);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 .hero-title {
+  margin: 0;
+  padding-bottom: 30px;
+
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  margin: 0;
 }
 .button {
-  width: 200px;
+  display: inline-block;
+  min-width: 200px;
   height: 50px;
+
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
-  display: inline-block;
-  align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   text-align: center;
 }
 /* Advantages */
-.section-title {
-  padding-bottom: 50px;
+.advantages-title {
+  margin-bottom: 10px;
 }
 .advantages-list {
   display: flex;
@@ -213,7 +221,7 @@ ol {
 }
 /* Features */
 .section-title {
-  margin: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -255,10 +263,8 @@ ol {
 }
 /*==========FOOTER========*/
 .page-footer {
-  width: 1600px;
-  height: 252px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-bottom: 60px;
   background-color: var(--footer-bckg-color);
   font-style: inherit;
 }
