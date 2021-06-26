@@ -178,7 +178,7 @@ img {
 }
 .hero-title {
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -191,7 +191,10 @@ img {
   display: inline-block;
   min-width: 200px;
   height: 50px;
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   border-radius: 4px;
 
   color: var(--hero-text-color);
@@ -339,7 +342,12 @@ img {
 }
 .filter-button {
   border-radius: 4px;
-  padding: 6px 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border: 1px solid transparent;
+
   font-family: 'roboto';
   background-color: var(--secondary-bckg-color);
   color: var(--title-text-color);
