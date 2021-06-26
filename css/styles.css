@@ -11,7 +11,7 @@
   --whitetext-color: #ffffff;
   --footlogo-span-color: rgba(255, 255, 255, 1);
   --foot-contacts-color: rgba(255, 255, 255, 0.6);
-  --incard-box-color: #eeeeee;
+  --subimage-box-color: #eeeeee;
   --header-border-color: #ececec;
 }
 html {
@@ -230,7 +230,6 @@ img {
   line-height: 1.71;
 }
 /* Features */
-
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -262,8 +261,9 @@ img {
   margin-left: 30px;
   flex-basis: calc((100% - 120px) / 4);
 }
-.member-pic {
-  margin-bottom: 30px;
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-member {
   color: var(--title-text-color);
@@ -271,9 +271,6 @@ img {
 }
 .team-dscr {
   padding-bottom: 30px;
-  /* Будет тень, пока - что рамка */
-  border-bottom: 1px solid var(--primary-text-color);
-  border-radius: 5px;
 }
 /*==========FOOTER========*/
 .page-footer {
@@ -341,7 +338,6 @@ img {
   margin-left: 8px;
 }
 .filter-button {
-  border: 0px solid black;
   border-radius: 4px;
   padding: 6px 22px;
   font-family: 'roboto';
@@ -361,22 +357,20 @@ img {
 }
 /* EXHIBITION-LIST */
 .exhibition-list {
-  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 .exhibition-list > .item {
-  outline: 1px solid teal;
-
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 .subimage-box {
-  padding: 20px 24px;
-  border: 1px solid var(--incard-box-color);
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border: 1px solid var(--subimage-box-color);
 }
 .exhibition-list-title {
   margin-bottom: 4px;
