@@ -334,11 +334,11 @@ img {
 .filter-list {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filter-list > .item:not(:first-child) {
   margin-left: 8px;
-  margin-bottom: 50px;
 }
 .filter-button {
   border: 0px solid black;
@@ -361,18 +361,18 @@ img {
 }
 /* EXHIBITION-LIST */
 .exhibition-list {
+  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 .exhibition-list > .item {
+  outline: 1px solid teal;
+
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100% - 60px) / 3);
-}
-.exhibition-list > .item:nth-child(3n + 1) {
-  margin-left: 0;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .subimage-box {
   padding: 20px 24px;
