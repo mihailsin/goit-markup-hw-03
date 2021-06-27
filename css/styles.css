@@ -128,8 +128,6 @@ img {
 /* Site-Nav */
 .nav-list {
   display: flex;
-}
-.nav-list > .item:first-child {
   margin-left: 93px;
 }
 .nav-list > .item:not(:first-child) {
