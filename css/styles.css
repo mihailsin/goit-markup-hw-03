@@ -111,7 +111,7 @@ img {
 }
 /* head-logo */
 .header-logo {
-  display: inline-block;
+  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -348,7 +348,7 @@ img {
   padding-left: 22px;
   border: 1px solid transparent;
 
-  font-family: 'roboto';
+  font-family: inherit;
   background-color: var(--secondary-bckg-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -376,11 +376,10 @@ img {
   flex-basis: calc((100% - 90px) / 3);
 }
 .subimage-box {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: 1px solid var(--subimage-box-color);
+  border-left: 1px solid var(--subimage-box-color);
+  border-right: 1px solid var(--subimage-box-color);
+  border-bottom: 1px solid var(--subimage-box-color);
+  padding: 20px 24px;
 }
 .exhibition-list-title {
   margin-bottom: 4px;
