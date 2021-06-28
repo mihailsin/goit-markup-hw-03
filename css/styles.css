@@ -13,6 +13,7 @@
   --foot-contacts-color: rgba(255, 255, 255, 0.6);
   --subimage-box-color: #eeeeee;
   --header-border-color: #ececec;
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
 }
 html {
   box-sizing: border-box;
@@ -231,6 +232,9 @@ img {
   line-height: 1.71;
 }
 /* Features */
+.features {
+  padding-bottom: 94px;
+}
 .features-list {
   display: flex;
   flex-wrap: wrap;
